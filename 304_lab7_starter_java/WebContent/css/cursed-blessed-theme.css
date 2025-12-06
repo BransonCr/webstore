@@ -1,0 +1,480 @@
+/* ========================================
+   Cursed & Blessed Emporium - Main Theme
+   ======================================== */
+
+/* Global Styles */
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to bottom, #1a0000 0%, #4a0000 50%, #000033 100%);
+    background-attachment: fixed;
+    color: #ffcccc;
+    min-height: 100vh;
+}
+
+/* Typography */
+h1 {
+    color: #ff6666;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #ffcc99;
+    text-shadow: 0 0 5px #ff6600;
+    margin: 15px 0;
+}
+
+h3 {
+    color: #99ccff;
+    text-shadow: 0 0 5px #0066ff;
+}
+
+h4 {
+    color: #cc99ff;
+}
+
+h5 {
+    color: #ffcc99;
+}
+
+/* Links */
+a {
+    color: #99ccff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc99;
+    text-shadow: 0 0 5px #ffcc99;
+}
+
+/* Navigation Links */
+.nav-link, h2 a {
+    color: #ffcc99;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #ffcc99;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 5px;
+    transition: all 0.3s;
+}
+
+.nav-link:hover, h2 a:hover {
+    background: #ffcc99;
+    color: #1a0000;
+    box-shadow: 0 0 15px #ffcc99;
+    text-shadow: none;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th {
+    background: #330000;
+    color: #ffcc99;
+    padding: 12px 8px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #666;
+}
+
+td {
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffcccc;
+    padding: 10px 8px;
+    border: 1px solid #666;
+}
+
+tr:hover td {
+    background: rgba(102, 0, 0, 0.3);
+}
+
+/* Forms */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+    background: #330000;
+    color: #ffcccc;
+    border: 1px solid #666;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-family: Georgia, serif;
+    margin: 5px 0;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ff6666;
+    box-shadow: 0 0 5px #ff6666;
+}
+
+label {
+    color: #ffcc99;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+input[type="button"],
+.btn {
+    background: #660000;
+    color: #ffcc99;
+    padding: 10px 20px;
+    border: 2px solid #ff6666;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 1em;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.btn:hover {
+    background: #ff6666;
+    color: #000;
+    box-shadow: 0 0 10px #ff6666;
+}
+
+.btn-primary {
+    background: #660000;
+    border-color: #ff6666;
+}
+
+.btn-secondary {
+    background: #000066;
+    border-color: #6666ff;
+    color: #99ccff;
+}
+
+.btn-secondary:hover {
+    background: #6666ff;
+    color: #000;
+}
+
+.btn-success {
+    background: #006600;
+    border-color: #00ff00;
+    color: #99ff99;
+}
+
+.btn-success:hover {
+    background: #00ff00;
+    color: #000;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+img.thumb,
+img.thumbnail {
+    max-width: 100px;
+    height: auto;
+    border: 2px solid #ff6666;
+    border-radius: 5px;
+    background: #000;
+}
+
+img.product-image {
+    max-width: 400px;
+    border: 3px solid #ff6666;
+    border-radius: 10px;
+    background: #000;
+}
+
+/* Containers */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    border: 2px solid #ff6666;
+}
+
+.box,
+.panel,
+.card {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Alerts & Messages */
+.warning,
+.alert-warning {
+    background: #660000;
+    color: #ff9999;
+    padding: 15px;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.info,
+.alert-info {
+    background: #000066;
+    color: #9999ff;
+    padding: 15px;
+    border: 2px solid #6666ff;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.success,
+.alert-success {
+    background: #006600;
+    color: #99ff99;
+    padding: 15px;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.error,
+.alert-error,
+.alert-danger {
+    background: #660000;
+    color: #ff6666;
+    padding: 15px;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Product Descriptions */
+.product-description {
+    background: rgba(102, 0, 0, 0.3);
+    padding: 20px;
+    border-left: 5px solid #ff6666;
+    margin: 20px 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+    border-radius: 5px;
+}
+
+.blessed-description {
+    background: rgba(0, 0, 102, 0.3);
+    border-left: 5px solid #6666ff;
+}
+
+/* Character Explainers (Satan & Ramond) */
+.explainer {
+    margin: 30px 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 2px dashed #ffcc99;
+    overflow: auto;
+}
+
+.explainer img {
+    max-width: 150px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.explainer h3 {
+    color: #ffcc99;
+    margin-top: 0;
+}
+
+.explainer p {
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.cursed-explainer {
+    border-color: #ff3333;
+}
+
+.cursed-explainer h3 {
+    color: #ff3333;
+}
+
+.blessed-explainer {
+    border-color: #6699ff;
+}
+
+.blessed-explainer h3 {
+    color: #6699ff;
+}
+
+/* Shopping Cart Specific */
+.cart-total {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ffcc99;
+    text-align: right;
+}
+
+.cart-empty {
+    text-align: center;
+    padding: 50px;
+    color: #ffcc99;
+    font-size: 1.2em;
+}
+
+/* Price Display */
+.price {
+    color: #ffcc99;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.price-large {
+    color: #ff9966;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Category Badges */
+.category-cursed {
+    background: #660000;
+    color: #ff6666;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    display: inline-block;
+}
+
+.category-blessed {
+    background: #000066;
+    color: #6666ff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    display: inline-block;
+}
+
+/* Header Styles */
+.site-header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #ff6666;
+    margin-bottom: 30px;
+}
+
+.site-title {
+    font-size: 3em;
+    margin: 0;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #ff6666;
+    margin-top: 50px;
+    color: #999;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.mt-1 { margin-top: 10px; }
+.mt-2 { margin-top: 20px; }
+.mt-3 { margin-top: 30px; }
+.mb-1 { margin-bottom: 10px; }
+.mb-2 { margin-bottom: 20px; }
+.mb-3 { margin-bottom: 30px; }
+.p-1 { padding: 10px; }
+.p-2 { padding: 20px; }
+.p-3 { padding: 30px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    .explainer img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px;
+    }
+}
+
+/* Loading/Processing Indicators */
+.loading {
+    text-align: center;
+    padding: 50px;
+    color: #ffcc99;
+}
+
+.loading::after {
+    content: '...';
+    animation: dots 1.5s infinite;
+}
+
+@keyframes dots {
+    0%, 20% { content: '.'; }
+    40% { content: '..'; }
+    60%, 100% { content: '...'; }
+}
+
+/* Hover Effects for Product Cards */
+.product-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 102, 102, 0.3);
+}

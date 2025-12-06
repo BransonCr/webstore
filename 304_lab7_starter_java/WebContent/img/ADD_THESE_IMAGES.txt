@@ -1,0 +1,17 @@
+REQUIRED IMAGES FOR CURSED & BLESSED EMPORIUM:
+
+1. satan.png
+   - Image of Satan from South Park
+   - Used to explain cursed items on product pages
+   - Recommended size: 300x300 pixels
+   - Format: PNG with transparent background (optional)
+
+2. ramond.png
+   - Image of Ramond the Angel
+   - Used to explain blessed items on product pages
+   - Recommended size: 300x300 pixels
+   - Format: PNG with transparent background (optional)
+
+Place both images in this directory (WebContent/img/)
+
+The application will gracefully handle missing images (they won't display but won't break the page).
